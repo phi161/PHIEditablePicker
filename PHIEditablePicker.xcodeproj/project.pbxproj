@@ -12,6 +12,12 @@
 		ADCAD16E1EF117FD00FF45AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCAD16C1EF117FD00FF45AB /* Main.storyboard */; };
 		ADCAD1701EF117FD00FF45AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCAD16F1EF117FD00FF45AB /* Assets.xcassets */; };
 		ADCAD1731EF117FD00FF45AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCAD1711EF117FD00FF45AB /* LaunchScreen.storyboard */; };
+		ADCAD1801EF11B2F00FF45AB /* PHIPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCAD17A1EF11B2F00FF45AB /* PHIPickerViewController.xib */; };
+		ADCAD1811EF11B2F00FF45AB /* PHIOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCAD17B1EF11B2F00FF45AB /* PHIOptionTableViewCell.xib */; };
+		ADCAD1821EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADCAD17C1EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.xib */; };
+		ADCAD1831EF11B2F00FF45AB /* PHIPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAD17D1EF11B2F00FF45AB /* PHIPickerViewController.swift */; };
+		ADCAD1841EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAD17E1EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.swift */; };
+		ADCAD1851EF11B2F00FF45AB /* PHIOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCAD17F1EF11B2F00FF45AB /* PHIOptionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		ADCAD16F1EF117FD00FF45AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADCAD1721EF117FD00FF45AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADCAD1741EF117FD00FF45AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCAD17A1EF11B2F00FF45AB /* PHIPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHIPickerViewController.xib; sourceTree = "<group>"; };
+		ADCAD17B1EF11B2F00FF45AB /* PHIOptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHIOptionTableViewCell.xib; sourceTree = "<group>"; };
+		ADCAD17C1EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHIEditableOptionTableViewCell.xib; sourceTree = "<group>"; };
+		ADCAD17D1EF11B2F00FF45AB /* PHIPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHIPickerViewController.swift; sourceTree = "<group>"; };
+		ADCAD17E1EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHIEditableOptionTableViewCell.swift; sourceTree = "<group>"; };
+		ADCAD17F1EF11B2F00FF45AB /* PHIOptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHIOptionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,27 @@
 			isa = PBXGroup;
 			children = (
 				ADCAD1681EF117FD00FF45AB /* AppDelegate.swift */,
-				ADCAD16A1EF117FD00FF45AB /* ViewController.swift */,
-				ADCAD16C1EF117FD00FF45AB /* Main.storyboard */,
 				ADCAD16F1EF117FD00FF45AB /* Assets.xcassets */,
-				ADCAD1711EF117FD00FF45AB /* LaunchScreen.storyboard */,
+				ADCAD1861EF11B3400FF45AB /* Component */,
 				ADCAD1741EF117FD00FF45AB /* Info.plist */,
+				ADCAD1711EF117FD00FF45AB /* LaunchScreen.storyboard */,
+				ADCAD16C1EF117FD00FF45AB /* Main.storyboard */,
+				ADCAD16A1EF117FD00FF45AB /* ViewController.swift */,
 			);
 			path = PHIEditablePicker;
+			sourceTree = "<group>";
+		};
+		ADCAD1861EF11B3400FF45AB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				ADCAD17E1EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.swift */,
+				ADCAD17C1EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.xib */,
+				ADCAD17F1EF11B2F00FF45AB /* PHIOptionTableViewCell.swift */,
+				ADCAD17B1EF11B2F00FF45AB /* PHIOptionTableViewCell.xib */,
+				ADCAD17D1EF11B2F00FF45AB /* PHIPickerViewController.swift */,
+				ADCAD17A1EF11B2F00FF45AB /* PHIPickerViewController.xib */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +150,9 @@
 			files = (
 				ADCAD1731EF117FD00FF45AB /* LaunchScreen.storyboard in Resources */,
 				ADCAD1701EF117FD00FF45AB /* Assets.xcassets in Resources */,
+				ADCAD1821EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.xib in Resources */,
+				ADCAD1801EF11B2F00FF45AB /* PHIPickerViewController.xib in Resources */,
+				ADCAD1811EF11B2F00FF45AB /* PHIOptionTableViewCell.xib in Resources */,
 				ADCAD16E1EF117FD00FF45AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCAD1831EF11B2F00FF45AB /* PHIPickerViewController.swift in Sources */,
 				ADCAD16B1EF117FD00FF45AB /* ViewController.swift in Sources */,
+				ADCAD1841EF11B2F00FF45AB /* PHIEditableOptionTableViewCell.swift in Sources */,
+				ADCAD1851EF11B2F00FF45AB /* PHIOptionTableViewCell.swift in Sources */,
 				ADCAD1691EF117FD00FF45AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
